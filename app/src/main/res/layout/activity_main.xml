@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnExample1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="16dp"
+        android:text="Example 1 - String Request"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/app_name"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnExample2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Example 2 - JSON Object Request"
+        app:layout_constraintEnd_toEndOf="@+id/btnExample1"
+        app:layout_constraintStart_toStartOf="@+id/btnExample1"
+        app:layout_constraintTop_toBottomOf="@+id/btnExample1" />
+
+    <Button
+        android:id="@+id/btnExample3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Example 3- JSON Array Request"
+        app:layout_constraintEnd_toEndOf="@+id/btnExample2"
+        app:layout_constraintStart_toStartOf="@+id/btnExample2"
+        app:layout_constraintTop_toBottomOf="@+id/btnExample2" />
+
+    <Button
+        android:id="@+id/btnExample4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Example 4- Image Request"
+        app:layout_constraintEnd_toEndOf="@+id/btnExample3"
+        app:layout_constraintStart_toStartOf="@+id/btnExample3"
+        app:layout_constraintTop_toBottomOf="@+id/btnExample3" />
+</androidx.constraintlayout.widget.ConstraintLayout>
